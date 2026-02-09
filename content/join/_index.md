@@ -1,17 +1,25 @@
 +++
 title = "Mitmachen"
-description = "Mitglied werden oder die Partei Die Zukunft unterstützen."
+description = "Supporter, Volunteer oder Mitglied — drei Stufen."
 template = "section.html"
+
+[extra]
+status = "draft"
 +++
 
-### Mitglied werden
+Du kannst auf drei Stufen mitmachen:
 
-Die Zukunft steht allen offen, die sich für eine zukunftsorientierte Politik in der Schweiz einsetzen möchten. Die Mitgliedschaft ist an keine Bedingungen geknüpft ausser der Anerkennung der Statuten.
+## 1) Supporter
 
-### Kontakt
+- Updates / Newsletter
+- Feedback, Signalverstärkung, lokale Kontakte
 
-Schreiben Sie uns an [hey@die-zukunft.ch](mailto:hey@die-zukunft.ch), um mehr zu erfahren oder sich anzumelden.
+## 2) Volunteer
 
-### Unterstützen
+- Du bringst Skills rein: Video, Design, Events, Policy, Ops
 
-Auch ohne Mitgliedschaft können Sie die Partei unterstützen — durch Spenden, Teilnahme an Veranstaltungen oder Verbreitung unserer Ideen.
+## 3) Mitglied
+
+- Formaler Beitritt (nach Vereinsgründung)
+
+Aktuell: nutze das [Mitmachen-Formular der Hauptseite](https://die-zukunft.ch/mitmachen).

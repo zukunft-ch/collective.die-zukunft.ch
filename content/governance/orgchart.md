@@ -1,7 +1,7 @@
 +++
 title = "Organigramm"
-description = "Organisationsstruktur der Partei Die Zukunft."
-weight = 2
+description = "Organisationsstruktur — minimal, klar."
+date = 2026-02-09
 template = "page.html"
 
 [extra]
@@ -11,18 +11,18 @@ updated = "09.02.2026"
 
 Die Partei Die Zukunft ist als Verein organisiert und folgt einer flachen Hierarchie.
 
-### Mitgliederversammlung
+## Mitgliederversammlung
 
 Oberstes Organ. Jedes Mitglied hat eine Stimme. Entscheidet über Statuten, Vorstand, Budget und strategische Ausrichtung.
 
-### Vorstand
+## Vorstand
 
 Operative Führung. Verantwortlich für die Umsetzung der Beschlüsse der Mitgliederversammlung.
 
-### Arbeitsgruppen
+## Working Groups
 
-Thematische Gruppen, die sich mit spezifischen Politikbereichen befassen. Offen für alle Mitglieder.
+Thematische Gruppen mit klarem Scope und sichtbaren Outputs. Offen für alle Mitglieder.
 
-### Revisionsstelle
+## Revisionsstelle
 
 Unabhängige Prüfung der Finanzen. Berichtet an die Mitgliederversammlung.

@@ -1,7 +1,7 @@
 +++
-title = "Moderationsrichtlinie"
-description = "Richtlinien für die Moderation interner Kommunikationskanäle."
-weight = 2
+title = "Moderationspolitik"
+description = "Harte Debatte — aber keine Zerstörung."
+date = 2026-02-09
 template = "page.html"
 
 [extra]
@@ -9,25 +9,17 @@ status = "draft"
 updated = "09.02.2026"
 +++
 
-### Grundsätze
+Wir wollen harte Debatte — aber keine Zerstörung.
 
-Die Kommunikation innerhalb der Partei basiert auf gegenseitigem Respekt und konstruktivem Austausch.
+## Entfernt / moderiert wird
 
-### Verhaltensregeln
+- Aufrufe zu Gewalt
+- Doxxing / Veröffentlichung privater Daten
+- Spam, Scam, Impersonation
+- Belästigung (wiederholt / gezielt)
 
-- Sachliche und respektvolle Kommunikation
-- Keine persönlichen Angriffe oder Diskriminierung
-- Keine Verbreitung von Falschinformationen
-- Konstruktive Kritik wird ermutigt
+## Prinzip
 
-### Massnahmen
-
-Bei Verstössen gegen die Moderationsrichtlinie gelten folgende Massnahmen:
-
-1. Verwarnung
-2. Temporäre Sperrung
-3. Ausschluss aus dem Kommunikationskanal
-
-### Ansprechpersonen
-
-Moderationsanliegen können an den Vorstand gerichtet werden.
+- So wenig wie möglich eingreifen
+- So klar wie möglich begründen
+- Wenn möglich: deeskalieren statt bannen

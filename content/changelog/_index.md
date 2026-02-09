@@ -1,19 +1,14 @@
 +++
-title = "Änderungen"
-description = "Protokoll aller Änderungen an Governance-Dokumenten und Richtlinien."
+title = "Changelog"
+description = "Was wurde geändert — und warum."
 template = "section.html"
+
+[extra]
+status = "draft"
 +++
 
-### 09.02.2026 — Initialisierung
+## 2026-02-09
 
-Erstveröffentlichung aller Governance-Dokumente als Entwurf:
-
-- Statuten
-- Organigramm
-- Rollen & Verantwortlichkeiten
-- Entscheidungsprotokoll
-- Spendenrichtlinie
-- Datenschutzrichtlinie
-- Moderationsrichtlinie
-- Richtlinie zu Interessenkonflikten
-- Onboarding-Leitfaden
+- Initiales `collective.` Gerüst publiziert
+- Policies v1 (draft)
+- Finance Report Format v1

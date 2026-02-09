@@ -1,7 +1,7 @@
 +++
-title = "Onboarding"
-description = "Leitfaden für neue Freiwillige und Mitglieder."
-weight = 1
+title = "Volunteer Onboarding"
+description = "Leitfaden für neue Freiwillige."
+date = 2026-02-09
 template = "page.html"
 
 [extra]
@@ -9,24 +9,19 @@ status = "draft"
 updated = "09.02.2026"
 +++
 
-Willkommen bei Die Zukunft. Dieser Leitfaden hilft dir beim Einstieg.
+## 1) Prinzipien
 
-### Erste Schritte
+- Optimistisch, lösungsorientiert
+- Keine Black-Box: Entscheidungen nachvollziehbar machen
+- Datenschutz ernst nehmen
 
-1. **Statuten lesen** — Mache dich mit unseren [Statuten](/governance/statuten/) vertraut
-2. **Kommunikationskanäle** — Tritt unseren internen Kanälen bei (Einladung per E-Mail)
-3. **Arbeitsgruppen** — Wähle eine Arbeitsgruppe, die deinen Interessen entspricht
-4. **Veranstaltungen** — Nimm an der nächsten Versammlung teil
+## 2) Kommunikationsregeln
 
-### Arbeitsgruppen
+- Keine Flamewars
+- Kritik: sachlich, präzise, nicht beleidigt
+- Immer eine konkrete Handlung anbieten ("So lösen wir's")
 
-Unsere Arbeitsgruppen sind thematisch organisiert und offen für alle Mitglieder. Aktuelle Gruppen:
+## 3) Deliverables
 
-- Programm & Inhalte
-- Kommunikation & Medien
-- Technologie & Website
-- Organisation & Events
-
-### Ansprechpersonen
-
-Bei Fragen wende dich an [hey@die-zukunft.ch](mailto:hey@die-zukunft.ch).
+- Kleine, shipbare Einheiten
+- Jede Woche: 1 sichtbares Ergebnis (Post, Doc, Event, Patch)

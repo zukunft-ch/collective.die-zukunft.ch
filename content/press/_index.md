@@ -1,10 +1,23 @@
 +++
 title = "Presse"
-description = "Medienmitteilungen und Pressematerial der Partei Die Zukunft."
+description = "Media Kit, Logos, Kontakt."
 sort_by = "date"
 template = "section.html"
+
+[extra]
+status = "draft"
 +++
 
-Medienmitteilungen und Pressematerial werden hier veröffentlicht, sobald sie vorliegen.
+## Kurzbeschreibung
 
-Für Medienanfragen wenden Sie sich bitte an [hey@die-zukunft.ch](mailto:hey@die-zukunft.ch).
+Die Zukunft ist eine neue Schweizer Partei für strukturellen Wandel:
+Wohlstand, Komfort und Wohlergehen — mit Sicherheit, Souveränität und offenen Verfahren.
+
+## Assets
+
+- Logos: `/press/logos/` *(Platzhalter)*
+- Fotos: `/press/photos/` *(Platzhalter)*
+
+## Kontakt
+
+Bitte den [Kontakt der Hauptseite](https://die-zukunft.ch/kontakt) verwenden.
