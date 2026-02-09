@@ -14,6 +14,7 @@ taxonomies = []
 [extra]
 org_name = "Die Zukunft"
 org_subtitle = "Kollektiv — Governance & Transparenz"
+repo_url = "https://github.com/zukunft-ch/collective.die-zukunft.ch"
 contact_email = "hey@die-zukunft.ch"
 contact_city = "Basel, Schweiz"
 
