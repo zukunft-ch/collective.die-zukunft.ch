@@ -1,0 +1,77 @@
+name: "Sitzungsprotokoll"
+description: "Protokoll einer Vorstandssitzung oder Versammlung erfassen."
+title: "Protokoll — [DATUM]"
+labels: ["protokoll", "draft"]
+body:
+  - type: input
+    id: date
+    attributes:
+      label: Datum
+      description: "Datum der Sitzung (YYYY-MM-DD)"
+      placeholder: "2026-03-15"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Art der Sitzung
+      options:
+        - Vorstandssitzung
+        - Mitgliederversammlung
+        - Working Group
+        - Andere
+    validations:
+      required: true
+
+  - type: textarea
+    id: attendees
+    attributes:
+      label: "Teilnehmer:innen"
+      description: "Wer war anwesend?"
+      placeholder: |
+        - Name 1
+        - Name 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: agenda
+    attributes:
+      label: Traktanden
+      description: "Nummerierte Tagesordnung"
+      placeholder: |
+        1. Begrüssung
+        2. Genehmigung letztes Protokoll
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: decisions
+    attributes:
+      label: Beschlüsse
+      description: "Was wurde beschlossen?"
+      placeholder: |
+        - Beschluss 1: ...
+        - Beschluss 2: ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: actions
+    attributes:
+      label: Action Items
+      description: "Wer macht was bis wann?"
+      placeholder: |
+        - [ ] @person — Aufgabe (bis YYYY-MM-DD)
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notizen
+      description: "Weitere Anmerkungen"
+    validations:
+      required: false

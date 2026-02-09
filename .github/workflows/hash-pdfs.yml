@@ -1,0 +1,52 @@
+name: Hash PDFs
+
+on:
+  pull_request:
+    paths:
+      - "static/pdfs/**"
+
+jobs:
+  hash:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compute SHA256 for PDFs
+        id: hashes
+        run: |
+          REPORT=""
+          for pdf in $(git diff --name-only --diff-filter=ACM origin/main...HEAD -- 'static/pdfs/*.pdf'); do
+            if [ -f "$pdf" ]; then
+              HASH=$(sha256sum "$pdf" | cut -d' ' -f1)
+              NAME=$(basename "$pdf")
+              REPORT="${REPORT}| \`${NAME}\` | \`${HASH}\` |\n"
+            fi
+          done
+
+          if [ -z "$REPORT" ]; then
+            echo "found=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "report<<HASHEOF"
+              echo -e "| Datei | SHA256 |\n|-------|--------|\n${REPORT}"
+              echo "HASHEOF"
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Comment on PR
+        if: steps.hashes.outputs.found == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr comment "${{ github.event.pull_request.number }}" --body "$(cat <<EOF
+          ## SHA256 Hashes
+
+          ${{ steps.hashes.outputs.report }}
+
+          Bitte diese Hashes im entsprechenden Content-File unter \`extra.pdf_sha256\` eintragen.
+          EOF
+          )"

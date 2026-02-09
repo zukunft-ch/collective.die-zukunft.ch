@@ -1,0 +1,135 @@
+name: Scaffold Minutes
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Datum (YYYY-MM-DD)"
+        required: true
+        type: string
+      type:
+        description: "Art der Sitzung"
+        required: true
+        type: choice
+        options:
+          - vorstand
+          - mitgliederversammlung
+          - working-group
+      attendees:
+        description: "Teilnehmer:innen (kommagetrennt)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scaffold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create minutes file
+        run: |
+          SLUG="${{ inputs.date }}-${{ inputs.type }}"
+          BRANCH="minutes/${SLUG}"
+          FILE="content/minutes/${SLUG}.md"
+
+          # Format type for title
+          case "${{ inputs.type }}" in
+            vorstand) TITLE="Vorstandssitzung" ;;
+            mitgliederversammlung) TITLE="Mitgliederversammlung" ;;
+            working-group) TITLE="Working Group" ;;
+            *) TITLE="${{ inputs.type }}" ;;
+          esac
+
+          # Format attendees as markdown list
+          ATTENDEES=""
+          if [ -n "${{ inputs.attendees }}" ]; then
+            IFS=',' read -ra NAMES <<< "${{ inputs.attendees }}"
+            for name in "${NAMES[@]}"; do
+              trimmed=$(echo "$name" | xargs)
+              ATTENDEES="${ATTENDEES}\n- ${trimmed}"
+            done
+          else
+            ATTENDEES="\n- TBD"
+          fi
+
+          git checkout -b "${BRANCH}"
+
+          cat > "${FILE}" << FRONTMATTER
+          +++
+          title = "${TITLE} — ${{ inputs.date }}"
+          description = "Protokoll der ${TITLE} vom ${{ inputs.date }}."
+          date = ${{ inputs.date }}
+          template = "document.html"
+
+          [extra]
+          status = "draft"
+          updated = "$(date +%d.%m.%Y)"
+          +++
+
+          ## Teilnehmer:innen
+          $(echo -e "${ATTENDEES}")
+
+          ## Traktanden
+
+          1. Begrüssung
+          2. Genehmigung letztes Protokoll
+          3. TBD
+
+          ## Beschlüsse
+
+          - TBD
+
+          ## Action Items
+
+          - [ ] TBD
+
+          ## Notizen
+
+          FRONTMATTER
+
+          # Remove leading whitespace from heredoc
+          sed -i 's/^          //' "${FILE}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${FILE}"
+          git commit -m "Scaffold: ${TITLE} — ${{ inputs.date }}"
+          git push origin "${BRANCH}"
+
+      - name: Create PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          SLUG="${{ inputs.date }}-${{ inputs.type }}"
+          case "${{ inputs.type }}" in
+            vorstand) TITLE="Vorstandssitzung" ;;
+            mitgliederversammlung) TITLE="Mitgliederversammlung" ;;
+            working-group) TITLE="Working Group" ;;
+            *) TITLE="${{ inputs.type }}" ;;
+          esac
+
+          gh pr create \
+            --title "Protokoll: ${TITLE} — ${{ inputs.date }}" \
+            --body "$(cat <<'EOF'
+          ## Protokoll-Entwurf
+
+          Automatisch erstellt via Workflow.
+
+          **Nächste Schritte:**
+          1. Protokoll ausfüllen
+          2. Review durch Teilnehmer:innen
+          3. Merge = Veröffentlichung
+
+          ---
+          - [ ] Teilnehmer:innen eingetragen
+          - [ ] Traktanden vollständig
+          - [ ] Beschlüsse dokumentiert
+          - [ ] Action Items mit Owner + Deadline
+          EOF
+          )" \
+            --label "protokoll,draft" \
+            --head "minutes/${SLUG}"

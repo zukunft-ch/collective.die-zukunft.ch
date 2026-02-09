@@ -1,0 +1,54 @@
+name: "Policy-Änderung"
+description: "Eine bestehende Policy ändern oder eine neue vorschlagen."
+title: "Policy — [KURZTITEL]"
+labels: ["policy", "draft"]
+body:
+  - type: dropdown
+    id: policy
+    attributes:
+      label: Betroffene Policy
+      options:
+        - Datenschutz
+        - Moderation
+        - Interessenkonflikte
+        - Spendenpolitik
+        - Neue Policy
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Aktuelle Regelung
+      description: "Was steht aktuell? (Zitat oder Zusammenfassung)"
+      placeholder: "Aktuell gilt: ..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Vorgeschlagene Änderung
+      description: "Was soll sich ändern?"
+      placeholder: "Neu soll gelten: ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Begründung
+      description: "Warum diese Änderung?"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Dringlichkeit
+      options:
+        - "Normal — nächste Sitzung"
+        - "Hoch — diese Woche"
+        - "Kritisch — sofort"
+    validations:
+      required: true

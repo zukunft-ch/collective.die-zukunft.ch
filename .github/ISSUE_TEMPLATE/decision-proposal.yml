@@ -1,0 +1,62 @@
+name: "Entscheidungsvorschlag"
+description: "Einen formellen Entscheid vorschlagen."
+title: "Entscheid — [KURZTITEL]"
+labels: ["entscheid", "draft"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Entscheid
+      description: "Was soll beschlossen werden? (ein Satz)"
+      placeholder: "Einführung der Spendenpolitik v1"
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Begründung
+      description: "Warum ist dieser Entscheid nötig?"
+      placeholder: "Wir brauchen klare Regeln für ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Auswirkung
+      description: "Was ändert sich konkret?"
+      placeholder: |
+        - Neue Policy-Seite auf collective.
+        - Monatliche Reports ab nächstem Monat
+    validations:
+      required: true
+
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      description: "Wer ist verantwortlich für die Umsetzung?"
+      placeholder: "@github-username"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Gremium
+      description: "Wer entscheidet?"
+      options:
+        - Vorstand
+        - Mitgliederversammlung
+        - Working Group
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Kontext / Links
+      description: "Weitere Infos, verwandte Issues, Dokumente"
+    validations:
+      required: false

@@ -1,0 +1,64 @@
+name: Validate Content
+
+on:
+  pull_request:
+    paths:
+      - "content/**/*.md"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check frontmatter
+        run: |
+          ERRORS=0
+          for file in $(git diff --name-only --diff-filter=ACM origin/main...HEAD -- 'content/**/*.md'); do
+            if [ ! -f "$file" ]; then
+              continue
+            fi
+
+            # Check for TOML frontmatter
+            if ! head -1 "$file" | grep -q '^\+\+\+'; then
+              echo "::error file=${file}::Missing TOML frontmatter (must start with +++)"
+              ERRORS=$((ERRORS + 1))
+              continue
+            fi
+
+            # Extract frontmatter
+            FM=$(sed -n '1,/^+++$/{ /^+++$/d; p; }' "$file" | tail -n +2)
+
+            # Check required fields
+            if ! echo "$FM" | grep -q '^title\s*='; then
+              echo "::error file=${file}::Missing 'title' in frontmatter"
+              ERRORS=$((ERRORS + 1))
+            fi
+
+            # Check status is valid (if present)
+            STATUS=$(echo "$FM" | grep 'status\s*=' | head -1 | sed 's/.*=\s*"\(.*\)".*/\1/')
+            if [ -n "$STATUS" ]; then
+              case "$STATUS" in
+                draft|ratified|superseded) ;;
+                *)
+                  echo "::error file=${file}::Invalid status '${STATUS}' — must be draft, ratified, or superseded"
+                  ERRORS=$((ERRORS + 1))
+                  ;;
+              esac
+            fi
+
+            # Check for YAML frontmatter (common mistake)
+            if head -1 "$file" | grep -q '^---'; then
+              echo "::error file=${file}::YAML frontmatter detected (---). Zola requires TOML (+++)"
+              ERRORS=$((ERRORS + 1))
+            fi
+          done
+
+          if [ $ERRORS -gt 0 ]; then
+            echo ""
+            echo "Found ${ERRORS} frontmatter error(s)."
+            exit 1
+          else
+            echo "All content files valid."
+          fi

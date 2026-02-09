@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "Allgemeine Diskussion"
+    url: https://github.com/zukunft-ch/collective.die-zukunft.ch/discussions
+    about: "Ideen, Fragen und offene Diskussionen — bevor es ein formelles Issue wird."
+  - name: "Kontakt"
+    url: https://die-zukunft.ch/kontakt
+    about: "Direkter Kontakt mit dem Team."
