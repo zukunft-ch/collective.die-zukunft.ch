@@ -1,0 +1,3 @@
+[submodule "themes/ensemble"]
+	path = themes/ensemble
+	url = https://github.com/zukunft-ch/ensemble.git

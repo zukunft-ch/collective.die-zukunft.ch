@@ -1,0 +1,56 @@
+base_url = "https://collective.die-zukunft.ch"
+theme = "ensemble"
+title = "Kollektiv"
+description = "Governance, Transparenz und Partizipation — Die Zukunft."
+default_language = "de"
+compile_sass = true
+minify_html = true
+generate_feeds = false
+
+taxonomies = []
+
+[markdown]
+
+[extra]
+org_name = "Die Zukunft"
+org_subtitle = "Kollektiv — Governance & Transparenz"
+contact_email = "hey@die-zukunft.ch"
+contact_city = "Basel, Schweiz"
+
+nav_sections = [
+  { key = "nav_governance", path = "/governance/", icon = "⚖️" },
+  { key = "nav_minutes", path = "/minutes/", icon = "📋" },
+  { key = "nav_finance", path = "/finance/", icon = "💰" },
+  { key = "nav_policies", path = "/policies/", icon = "📜" },
+  { key = "nav_join", path = "/join/", icon = "🤝" },
+  { key = "nav_volunteer", path = "/volunteer/", icon = "🙋" },
+  { key = "nav_press", path = "/press/", icon = "📰" },
+  { key = "nav_changelog", path = "/changelog/", icon = "🔄" },
+]
+
+[translations]
+nav_home = "Übersicht"
+nav_governance = "Governance"
+nav_minutes = "Sitzungen"
+nav_finance = "Finanzen"
+nav_policies = "Richtlinien"
+nav_join = "Mitmachen"
+nav_volunteer = "Freiwillige"
+nav_press = "Presse"
+nav_changelog = "Änderungen"
+footer_impressum = "Impressum"
+footer_datenschutz = "Datenschutz"
+footer_copyright = "Alle Rechte vorbehalten."
+skip_to_content = "Zum Inhalt springen"
+menu_open = "Menü öffnen"
+menu_close = "Menü schliessen"
+aria_toggle_theme = "Design umschalten"
+aria_scroll_top = "Nach oben scrollen"
+status_draft = "Entwurf"
+status_ratified = "Beschlossen"
+status_superseded = "Ersetzt"
+label_updated = "Aktualisiert"
+label_pdf_download = "PDF herunterladen"
+label_sha256 = "SHA-256"
+breadcrumb_home = "Übersicht"
+toc_title = "Inhaltsverzeichnis"

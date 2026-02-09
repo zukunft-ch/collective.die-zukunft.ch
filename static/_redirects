@@ -1,0 +1,2 @@
+# www → apex redirect
+https://www.collective.die-zukunft.ch/* https://collective.die-zukunft.ch/:splat 301
