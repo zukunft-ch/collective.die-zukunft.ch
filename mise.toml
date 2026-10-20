@@ -1,5 +1,5 @@
 [tools]
-zola = "0.19.2"
+zola = "0.22.1"
 
 [tasks.dev]
 description = "Start Zola development server"

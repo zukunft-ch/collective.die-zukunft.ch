@@ -1,6 +1,6 @@
 +++
 title = "Finanzen"
-description = "Summen, Kategorien, Reports — transparent ohne Selbstsabotage."
+description = "Summen, Kategorien, Berichte — transparent, ohne Personendaten."
 sort_by = "date"
 template = "section.html"
 
@@ -8,18 +8,19 @@ template = "section.html"
 status = "draft"
 +++
 
-Transparenz ohne Selbstsabotage:
-Wir publizieren **Summen, Kategorien, Reports** — und schützen Personendaten.
+Wir publizieren **Summen, Kategorien und Berichte** — und schützen Personendaten.
 
 ## Spenden
 
-- Spendenpolitik: [Spendenpolitik](/finance/donations-policy/)
-- Spendenlink: [Hauptseite](https://die-zukunft.ch/mitmachen)
+- [Spendenpolitik](/finance/donations-policy/) — Regeln für Annahme und Verwendung
+- Spenden: transparent über [Open Collective](https://opencollective.com/die-zukunft)
 
 ## Monatsberichte
 
-- [2026-02](/finance/monthly/2026-02/)
+Das Berichtsformat steht ([Vorlage Februar 2026](/finance/monthly/2026-02/)). Die Berichte ab März 2026
+sind noch nicht publiziert und werden nachgetragen.
 
 ## Jahresrechnung
 
-- 2026 *(Platzhalter)*
+Die erste Jahresrechnung wird nach Abschluss des ersten Geschäftsjahres als PDF mit SHA-256-Prüfsumme
+publiziert.

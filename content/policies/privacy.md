@@ -6,7 +6,7 @@ template = "page.html"
 
 [extra]
 status = "draft"
-updated = "09.02.2026"
+updated = "20.10.2026"
 +++
 
 Wir sammeln so wenig wie möglich — und nur für klare Zwecke.
@@ -24,7 +24,8 @@ Wir sammeln so wenig wie möglich — und nur für klare Zwecke.
 ## Was wir NICHT tun
 
 - Kein Verkauf von Daten
-- Keine unnötigen Tracker
+- Keine Tracker, keine Analyse-Werkzeuge
+- Keine Drittanbieter-CDNs: Schriften und Dateien werden von dieser Website selbst ausgeliefert, Ihre IP-Adresse geht nicht an Google, Fontshare oder ähnliche Dienste
 - Keine Veröffentlichung persönlicher Daten ohne Einwilligung
 
 ## Public vs Private

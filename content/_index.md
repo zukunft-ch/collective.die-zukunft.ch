@@ -9,11 +9,11 @@ sections = [
   { path = "/governance/", icon = "⚖️", title = "Governance", description = "Statuten, Rollen, Entscheidungslog." },
   { path = "/minutes/", icon = "📋", title = "Protokolle", description = "Gründungs- und Vorstandsprotokolle." },
   { path = "/finance/", icon = "💰", title = "Finanzen", description = "Spendenpolitik, Monatsberichte, Jahresrechnung." },
-  { path = "/policies/", icon = "📜", title = "Policies", description = "Datenschutz, Moderation, Interessenkonflikte." },
-  { path = "/join/", icon = "🤝", title = "Mitmachen", description = "Supporter, Volunteer, Mitglied." },
-  { path = "/volunteer/", icon = "🙋", title = "Volunteer", description = "Skills einbringen, sofort loslegen." },
-  { path = "/press/", icon = "📰", title = "Presse", description = "Media Kit, Logos, Kontakt." },
-  { path = "/changelog/", icon = "🔄", title = "Changelog", description = "Was wurde geändert — und warum." },
+  { path = "/policies/", icon = "📜", title = "Richtlinien", description = "Datenschutz, Moderation, Interessenkonflikte." },
+  { path = "/join/", icon = "🤝", title = "Mitmachen", description = "Unterstützen, mitarbeiten, Mitglied werden." },
+  { path = "/volunteer/", icon = "🙋", title = "Freiwillige", description = "Fähigkeiten einbringen, mit klarer Rolle." },
+  { path = "/press/", icon = "📰", title = "Presse", description = "Logos, Bilder, Kontakt." },
+  { path = "/changelog/", icon = "🔄", title = "Änderungen", description = "Was wurde geändert — und warum." },
 ]
 +++
 
@@ -22,24 +22,19 @@ sections = [
 **collective** ist das öffentliche Betriebssystem von **Die Zukunft (Le Futur / Il Futuro)**:
 Dokumente, Entscheidungen und Finanzen — **papierlos**, **prüfbar**, **öffentlichkeitsfähig**.
 
-> Wohlstand, Komfort und Wohlergehen für alle — mit einem modernen Gesellschaftsvertrag, der Sicherheit schafft und Freiheit vergrössert.
-
 > Wohlstand statt Mangeldenken. Sicherheit statt Angst. Souveränität statt Abhängigkeit.
 
-## Was du hier findest
+## Stand: im Aufbau
 
-- **Governance:** Statuten, Rollen, Entscheidungslog
-- **Protokolle:** Gründungs- und Vorstandsprotokolle (chronologisch)
-- **Finanzen:** Spendenpolitik, Monatsberichte, Jahresrechnung
-- **Policies:** Datenschutz, Moderation, Interessenkonflikte
-- **Mitmachen:** Mitgliedschaft, Volunteers, Working Groups
-- **Presse:** Press Kit, Logos, Kontakt
+Der Verein ist am 9. Februar 2026 gegründet worden und baut seine Strukturen auf. Viele Dokumente hier sind
+noch **Entwürfe** und als solche markiert. Wo eine Angabe noch fehlt, steht das ausdrücklich da — wir
+füllen keine Lücken mit Platzhaltern, sondern tragen nach, sobald es belastbar ist.
 
 ## Warum wir das so machen
 
-Politik wird oft als Black Box betrieben: Meetings, Entscheide, Geldflüsse — unklar.
+Politik wird oft als Black Box betrieben: Sitzungen, Entscheide, Geldflüsse — unklar.
 Wir drehen das um: **offene Verfahren**, **Versionierung**, **prüfbare Dokumente**.
 
-- Änderungen passieren als **Pull Request** (mit Review).
-- Wichtige PDFs werden mit **SHA256** gehasht.
-- "Superseded" wird sichtbar, nicht still ersetzt.
+- Änderungen laufen als Änderungsantrag auf GitHub (Pull Request, mit Review).
+- Wichtige PDFs werden mit **SHA-256** gehasht, damit jede Kopie prüfbar ist.
+- Ersetzte Fassungen bleiben sichtbar und werden als **ersetzt** markiert, nicht still gelöscht.

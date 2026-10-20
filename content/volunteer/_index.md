@@ -1,6 +1,6 @@
 +++
-title = "Volunteer"
-description = "Skills einbringen — mit klarer Rolle."
+title = "Freiwillige"
+description = "Fähigkeiten einbringen — mit klarer Rolle."
 sort_by = "date"
 template = "section.html"
 
@@ -12,14 +12,14 @@ Wenn du helfen willst, super — aber bitte **mit klarer Rolle**.
 
 ## Wo du sofort helfen kannst
 
-- Short-form Video Editing / Captions
-- Design Templates (Carousel / Quote / Event)
-- Event-Orga (Basel)
-- Policy Research (eine Seite, ein Thema)
-- Community / Distribution
+- Kurzvideos schneiden und untertiteln
+- Designvorlagen (Karussell, Zitat, Veranstaltung)
+- Veranstaltungen organisieren (Basel)
+- Politikrecherche (eine Seite, ein Thema)
+- Community und Verbreitung
 
 ## Workflow
 
-- 1 Task = 1 Owner
-- Wöchentlicher 30-min Sync
-- Outputs sind öffentlich oder klar begründet privat
+- Eine Aufgabe, eine verantwortliche Person
+- Wöchentlich 30 Minuten Abstimmung
+- Ergebnisse sind öffentlich — oder begründet privat

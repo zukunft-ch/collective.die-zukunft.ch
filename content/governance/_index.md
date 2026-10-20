@@ -8,20 +8,19 @@ template = "section.html"
 status = "ratified"
 +++
 
-Hier steht, **wie wir funktionieren**: Rollen, Prozesse, und die Dokumente, die unsere Organisation definieren.
+Hier steht, **wie wir funktionieren**: Rollen, Prozesse und die Dokumente, die unsere Organisation definieren.
 
 ## Statuten
 
-- `statutes/STATUTEN_v1.pdf` *(Platzhalter — kommt nach Gründungssitzung)*
-- `statutes/STATUTEN_v1.pdf.sha256`
+- [Statuten](/governance/statuten/) — Textfassung. Die unterzeichnete Fassung folgt als PDF mit SHA-256-Prüfsumme.
 
-**Regel:** Wenn Statuten geändert werden, wird die alte Version als **superseded** markiert, nicht gelöscht.
+**Regel:** Wenn Statuten geändert werden, wird die alte Fassung als **ersetzt** markiert, nicht gelöscht.
 
 ## Rollen & Organe
 
-- [Rollen & Zeichnungsberechtigung](/governance/roles/) — Vorstand, Working Groups, Zeichnungsberechtigung
-- [Organigramm](/governance/orgchart/) — Organigramm (minimal, klar)
+- [Rollen & Zeichnungsberechtigung](/governance/roles/) — Vorstand, Arbeitsgruppen, Zeichnungsberechtigung
+- [Organigramm](/governance/orgchart/) — die Organe des Vereins, minimal und klar
 
 ## Entscheidungslog
 
-- [Entscheidungslog](/governance/decisions/) — "Was wurde beschlossen, wann, warum, mit welcher Wirkung?"
+- [Entscheidungslog](/governance/decisions/) — was wurde beschlossen, wann, warum, mit welcher Wirkung

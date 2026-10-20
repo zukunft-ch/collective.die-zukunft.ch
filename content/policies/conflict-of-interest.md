@@ -6,13 +6,13 @@ template = "page.html"
 
 [extra]
 status = "draft"
-updated = "09.02.2026"
+updated = "20.10.2026"
 +++
 
 Wenn jemand an einer Entscheidung persönlich finanziell profitiert, muss das **transparent** sein.
 
 ## Regeln (v1)
 
-- COI wird vor einer Abstimmung deklariert
+- Interessenkonflikte werden vor einer Abstimmung offengelegt
 - Betroffene enthalten sich
-- COI wird im Protokoll festgehalten
+- Der Interessenkonflikt wird im Protokoll festgehalten

@@ -6,7 +6,7 @@ template = "document.html"
 
 [extra]
 status = "draft"
-updated = "09.02.2026"
+updated = "20.10.2026"
 +++
 
 ## Ort und Zeit
@@ -15,7 +15,7 @@ Basel, 9. Februar 2026, 14:00 Uhr
 
 ## Anwesende
 
-Gründungsmitglieder (Liste wird ergänzt)
+Gründungsmitglieder. Die Anwesenheitsliste wird mit dem unterzeichneten Protokoll publiziert.
 
 ## Traktanden
 
@@ -33,7 +33,7 @@ Der Vorstand wird für eine Amtsdauer von zwei Jahren gewählt.
 
 ### 4. Festlegung der Mitgliederbeiträge
 
-Die Mitgliederbeiträge werden wie folgt festgelegt: wird ergänzt.
+Die Mitgliederbeiträge werden festgelegt. Die Beträge werden mit dem unterzeichneten Protokoll publiziert.
 
 ### 5. Verschiedenes
 

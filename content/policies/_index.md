@@ -1,5 +1,5 @@
 +++
-title = "Policies"
+title = "Richtlinien"
 description = "Datenschutz, Moderation, Interessenkonflikte."
 sort_by = "date"
 template = "section.html"
@@ -8,7 +8,7 @@ template = "section.html"
 status = "draft"
 +++
 
-Diese Policies gelten für `die-zukunft.ch` und `collective.die-zukunft.ch`:
+Diese Richtlinien gelten für `die-zukunft.ch` und `collective.die-zukunft.ch`:
 
 - [Datenschutz](/policies/privacy/)
 - [Moderation](/policies/moderation/)

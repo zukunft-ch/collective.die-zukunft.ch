@@ -19,7 +19,7 @@ Oberstes Organ. Jedes Mitglied hat eine Stimme. Entscheidet über Statuten, Vors
 
 Operative Führung. Verantwortlich für die Umsetzung der Beschlüsse der Mitgliederversammlung.
 
-## Working Groups
+## Arbeitsgruppen
 
 Thematische Gruppen mit klarem Scope und sichtbaren Outputs. Offen für alle Mitglieder.
 

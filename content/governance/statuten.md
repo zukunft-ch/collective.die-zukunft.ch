@@ -1,16 +1,17 @@
 +++
 title = "Statuten"
-description = "Die Statuten der Partei Die Zukunft, beschlossen an der Gründungsversammlung."
+description = "Die Statuten des Vereins Die Zukunft (Textfassung)."
 date = 2026-02-09
 weight = 1
 template = "document.html"
 
 [extra]
 status = "draft"
-updated = "09.02.2026"
-pdf_url = "/pdfs/statuten.pdf"
-pdf_sha256 = "wird nach Veröffentlichung ergänzt"
+updated = "20.10.2026"
 +++
+
+Dies ist die Textfassung der Statuten. Die unterzeichnete Fassung wird als PDF mit SHA-256-Prüfsumme
+publiziert; bis dahin bleibt diese Seite als Entwurf markiert.
 
 ## Art. 1 — Name und Sitz
 

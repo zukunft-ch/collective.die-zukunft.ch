@@ -1,6 +1,6 @@
 +++
 title = "Mitmachen"
-description = "Supporter, Volunteer oder Mitglied — drei Stufen."
+description = "Unterstützen, mitarbeiten oder Mitglied werden — drei Stufen."
 template = "section.html"
 
 [extra]
@@ -9,17 +9,18 @@ status = "draft"
 
 Du kannst auf drei Stufen mitmachen:
 
-## 1) Supporter
+## 1) Unterstützen
 
-- Updates / Newsletter
-- Feedback, Signalverstärkung, lokale Kontakte
+- Updates und Newsletter
+- Feedback, Weitersagen, lokale Kontakte
 
-## 2) Volunteer
+## 2) Mitarbeiten
 
-- Du bringst Skills rein: Video, Design, Events, Policy, Ops
+- Du bringst Fähigkeiten ein: Video, Design, Veranstaltungen, Politikrecherche, Organisation —
+  siehe [Freiwillige](/volunteer/)
 
-## 3) Mitglied
+## 3) Mitglied werden
 
-- Formaler Beitritt (nach Vereinsgründung)
+- Formaler Beitritt zum Verein, mit Stimmrecht an der Mitgliederversammlung
 
-Aktuell: nutze das [Mitmachen-Formular der Hauptseite](https://die-zukunft.ch/mitmachen).
+Für alle drei Stufen: das [Mitmachen-Formular der Hauptseite](https://die-zukunft.ch/mitmachen/).
